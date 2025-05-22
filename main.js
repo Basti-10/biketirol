@@ -9,6 +9,7 @@ let ibk = {
 // Karte initialisieren
 let map = L.map("map").setView([ibk.lat, ibk.lng], 9);
 
+
 // WMTS Hintergrundlayer der eGrundkarte Tirol
 let eGrundkarteTirol = {
     sommer: L.tileLayer("https://wmts.kartetirol.at/gdi_summer/{z}/{x}/{y}.png", {
@@ -88,5 +89,8 @@ controlElevation.load("data/etappe14.gpx");
 var gkTirol = new L.TileLayer("https://wmts.kartetirol.at/gdi_summer/{z}/{x}/{y}.png");
 var miniMap = new L.Control.MiniMap(gkTirol, {
     toggleDisplay: true,
-    zoomLevelOffset: -5,
+    //zoomLevelOffset: -5,
 }).addTo(map);
+
+//Leaflet fullscreen Plugin
+map.addControl(new L.Control.Fullscreen());
