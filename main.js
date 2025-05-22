@@ -53,9 +53,9 @@ L.control.scale({
 
 // Etappennavigation über pulldown 
 console.log(ETAPPEN);
-for (let etappen of ETAPPEN) {
-    console.log(etappen);
-    console.log(etappen.user);
-    console.log(etappen.nr);
-    console.log(etappen.title);
+for (let etappe of ETAPPEN) {
+    console.log(etappe);
+    console.log(etappe.user);
+    console.log(etappe.nr);
+    console.log(etappe.title);
 }
