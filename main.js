@@ -50,3 +50,12 @@ L.control.layers({
 L.control.scale({
     imperial: false,
 }).addTo(map);
+
+// Etappennavigation über pulldown 
+console.log(ETAPPEN);
+for (let etappen of ETAPPEN) {
+    console.log(etappen);
+    console.log(etappen.user);
+    console.log(etappen.nr);
+    console.log(etappen.title);
+}
