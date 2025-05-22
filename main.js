@@ -83,3 +83,10 @@ const controlElevation = L.control.elevation({
     //slope: true,
 }).addTo(map);
 controlElevation.load("data/etappe14.gpx");
+
+//Minimap Plugin LeafletS
+var gkTirol = new L.TileLayer("https://wmts.kartetirol.at/gdi_summer/{z}/{x}/{y}.png");
+var miniMap = new L.Control.MiniMap(gkTirol, {
+    toggleDisplay: true,
+    zoomLevelOffset: -5,
+}).addTo(map);
