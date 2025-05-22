@@ -379,5 +379,4 @@ const ETAPPEN = [
  }
 ]
 
-]
  
